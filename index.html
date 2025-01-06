@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Joctan Porras Esquivel's CV" />
+    <meta name="keywords"
+      content="Joctan, Porras, Esquivel, CV, Curriculum, Vitae" />
+    <meta name="author" content="Joctan Porras Esquivel" />
+    <meta name="theme-color" content="#af47ff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Joctan</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/index.js" defer></script>
+
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <script
+      src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="background">
+    <!-- Main Container -->
+    <div
+      class="container-fluid background d-flex justify-content-center align-items-center">
+      <!-- Central Elements -->
+      <div
+        class="container-xxl row align-items-center justify-content-center center-elements">
+
+        <div
+          class="col-lg-1 col-md-2 col-sm-2 align-items-center justify-content-center ">
+          <!-- Offcanvas Navbar -->
+          <nav id="toggler-buttom-nav" class="navbar navbar-dark ">
+            <div class="container-fluid nav-bg-custom" id="toggler-buttom">
+              <button title="Show menu" class="button-transparent nav-item"
+                type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar"
+                aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <svg id="svg-toggler" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                  viewBox="0 0 24 24" fill="none" stroke="#4e54c8"
+                  stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" class="lucide lucide-menu"><line
+                    x1="4" x2="20" y1="12" y2="12" /><line x1="4" x2="20" y1="6"
+                    y2="6" /><line x1="4" x2="20" y1="18" y2="18" /></svg>
+              </button>
+              <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1"
+                id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title"
+                    id="offcanvasDarkNavbarLabel">Menu</h5>
+                  <button type="button" class="btn-close btn-close-white"
+                    data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page"
+                        href="#about"
+                        id="nav-about-buttom">About me</a>
+                    </li>
+          
+                    <li class="nav-item">
+                      <a class="nav-link" href="#resume"
+                        id="nav-resume-buttom">Resume</a>
+                    </li>
+          
+                    <li class="nav-item">
+                      <a class="nav-link" 
+                      id="nav-projects-buttom" href="#projects">Projects</a>
+                    </li>
+          
+                    <li class="nav-item">
+                      <a class="nav-link"  
+                      id="nav-hobbies-buttom" href="#hobbies">Hobbies</a>
+                    </li>
+          
+                    <li class="nav-item">
+                      <a class="nav-link" 
+                      id="nav-contact-buttom" href="#contact">Contact me</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+            <nav id="navElementsContainer"
+              class="navbar nav-bg-custom container-fluid">
+              <ul
+                class="container menu d-flex flex-column justify-content-center align-items-center gap-3 ">
+                <li class="nav-item active" id="about-buttom" title="About me">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                    viewBox="0 0 24 24" fill="none" stroke="#4e54c8"
+                    stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-user-round"><circle cx="12" cy="8"
+                      r="5" /><path d="M20 21a8 8 0 0 0-16 0" /></svg>
+                </li>
+
+                <li class="nav-item" id="resume-buttom" title="Resume">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                    viewBox="0 0 24 24" fill="none" stroke="#4e54c8"
+                    stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-notebook-text"><path d="M2 6h4" /><path
+                      d="M2 10h4" /><path d="M2 14h4" /><path
+                      d="M2 18h4" /><rect width="16" height="20" x="4" y="2"
+                      rx="2" /><path d="M9.5 8h5" /><path d="M9.5 12H16" /><path
+                      d="M9.5 16H14" /></svg>
+                </li>
+
+                <li class="nav-item" title="Projects" id="projects-buttom">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                    viewBox="0 0 24 24" fill="none" stroke="#4e54c8"
+                    stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-folder-git-2"><path
+                      d="M9 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v5" /><circle
+                      cx="13" cy="12" r="2" /><path
+                      d="M18 19c-2.8 0-5-2.2-5-5v8" /><circle cx="20" cy="19"
+                      r="2" /></svg>
+                </li>
+
+                <li class="nav-item" title="Hobbies" id="hobbies-buttom">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                    viewBox="0 0 24 24" fill="none" stroke="#4e54c8"
+                    stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="lucide lucide-camera"><path
+                      d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z" /><circle
+                      cx="12" cy="13" r="3" /></svg>
+                </li>
+
+                <li class="nav-item" title="Contact me" id="contact-buttom">
+                  
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                    viewBox="0 0 24 24" fill="none" stroke="#4e54c8"
+                    stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-book-user"><path
+                      d="M15 13a3 3 0 1 0-6 0" /><path
+                      d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" /><circle
+                      cx="12" cy="8" r="2" /></svg>
+                </li>
+
+              </ul>
+            </nav>
+
+          </div>
+
+          <div class="col-lg-11 col-md-10 col-sm-10">
+            <div class="row">
+              <div class="col-12 nav-bg-custom p-0">
+                <div
+                  class="container-fluid row align-items-center justify-content-center">
+
+                  <!-- Container picture -->
+                  <div
+                    class="h-110 col-xl-5 col-12 align-items-center justify-content-center">
+                    <img src="images/DSC_8759-1.jpg"
+                      class="img-fluid shape-custom" alt="Joctan">
+
+                    <h1 class="text-center text-dark fs-2">Joctan Porras
+                      Esquivel</h1>
+
+                    <div class='console-container'><span id='text'></span><div
+                        class='console-underscore'
+                        id='console'>&#95;</div></div>
+
+                    <!-- Icons social media -->
+                    <div class="my-2 d-flex justify-content-center gap-3">
+
+                      <a
+                        target="_blank"
+                        href="https://www.linkedin.com/in/joctan-esquivel-86b473254/"><img
+                          src="images/linkedin.png" alt="linkedin icon"
+                          class="img-fluid pointer" width="35" height="35"
+                          title="Let's go to my LinkedIn!"></a>
+                      <a target="_blank"
+                        href="https://github.com/joctan-tec"><img
+                          src="images/github.png" alt="github icon"
+                          class="img-fluid" width="35" height="35"
+                          title="Let's go to my GitHub!"></a>
+                      <a target="_blank"
+                        href="https://www.instagram.com/joc.esquivel/"><img
+                          src="images/instagram.png" alt="instagram icon"
+                          class="img-fluid" width="35" height="35"
+                          title="Let's go to my Instagram!"></a>
+                      <a target="_blank" href="https://wa.me/+50686361447"><img
+                          src="images/whatsapp.png" alt="whatsapp icon"
+                          class="img-fluid" width="35" height="35"
+                          title="Let's go to my WhatsApp!"></a>
+
+                    </div>
+
+                  </div>
+
+                  <div
+                    class="col-xl-7 col-12 py-3 center-elements overflow-auto">
+                    <!-- Start About -->
+                    <div
+                      class="container-fluid row align-items-center justify-content-center cv-section">
+                      <div class="col-12">
+                        <h2 id="about" class="text-start text-dark fs-3 mt-3">About
+                          me</h2>
+                      </div>
+
+                      <div class="col-12 py-4 border-bottom border-secondary">
+                        <div class="container-fluid row">
+
+                          <!-- Summary about me -->
+                          <div class="col-xl-6">
+                            <p class="text-start text-dark fs-6">
+                              I am Computer Engineering student skilled in
+                              Python, Java, and automation with Bash. Passionate
+                              about learning, innovation, and AI. Fluent in
+                              Spanish and improving English.
+                            </p>
+
+                          </div>
+
+                          <div
+                            class="col-xl-6 d-flex flex-column justify-content-center align-items-center">
+                            <div
+                              class="container-fluid border-bottom border-secondary d-flex justify-content-between align-items-center ">
+                              <h3 class="badge text-bg-success text-start fs-6">
+                                Age . . . . .
+                              </h3>
+                              <h3 class="text-end text-dark fs-6">
+                                21
+                              </h3>
+                            </div>
+
+                            <div
+                              class="container-fluid border-bottom border-secondary d-flex justify-content-between align-items-center mt-2">
+                              <h3 class="badge text-bg-success text-start fs-6">
+                                Residence . . . . . </h3>
+                              <h3 class="text-end text-dark fs-6">
+                                CRC
+                              </h3>
+                            </div>
+
+                            <div
+                              class="container-fluid d-flex justify-content-between align-items-center mt-2">
+                              <h3 class="badge text-bg-success text-start fs-6">
+                                Address . . . . .
+                              </h3>
+                              <h3 class="text-end text-dark fs-6">
+                                Cartago, CRC
+                              </h3>
+                            </div>
+
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="col-12 py-4">
+                        <h3 class="text-start text-dark fs-3">My Services</h3>
+
+                        <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
+
+                          <div
+                            class="feature col d-flex flex-column justify-content-start align-items-center">
+                            <div
+                              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 p-1 mb-3 rounded">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="48"
+                                height="48" viewBox="0 0 24 24" fill="none"
+                                stroke="#ffffff" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-code-xml"><path
+                                  d="m18 16 4-4-4-4" /><path
+                                  d="m6 8-4 4 4 4" /><path
+                                  d="m14.5 4-5 16" /></svg>
+                            </div>
+                            <h3 class="fs-5 text-center text-dark">Software
+                              Solutions</h3>
+                            <p class="fs-6 text-dark">I develop custom software
+                              solutions to automate processes, improve
+                              efficiency, and solve specific business
+                              challenges. From task management to system
+                              automation, I provide reliable and scalable
+                              applications tailored to your needs.</p>
+
+                          </div>
+
+                          <div
+                            class="feature col d-flex flex-column justify-content-start align-items-center">
+                            <div
+                              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 p-1 mb-3 rounded">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="48"
+                                height="48" viewBox="0 0 24 24" fill="none"
+                                stroke="#ffffff" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-camera"><path
+                                  d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z" /><circle
+                                  cx="12" cy="13" r="3" /></svg>
+                            </div>
+                            <h3 class="fs-5 text-center text-dark">Professional
+                              Photography</h3>
+                            <p class="fs-6 text-dark">I offer professional
+                              photography services, capturing high-quality
+                              images for events, portraits, and product shots.
+                              My goal is to deliver stunning visuals that tell
+                              your story and meet your unique needs.</p>
+
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <!-- Start Resume -->
+                    <div
+                      class="container-fluid row align-items-center justify-content-center cv-section d-none">
+
+                      <div class="col-12">
+                        <h2 id="resume"
+                          class="text-start text-dark fs-3 mt-3">Resume</h2>
+
+                        <div class="col-12 py-4 border-bottom border-secondary">
+                          <div class="container-fluid row">
+
+                            <!-- Education -->
+                            <div class="col-xl-6 ">
+                              <div class="d-flex align-items-center mb-2 gap-2">
+                                <h3
+                                  class="text-start fw-bold text-dark fs-5 m-0">Education</h3>
+
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                  width="32" height="32" viewBox="0 0 24 24"
+                                  fill="none" stroke="#4e54c8" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"
+                                  class="lucide lucide-school"><path
+                                    d="M14 22v-4a2 2 0 1 0-4 0v4" /><path
+                                    d="m18 10 3.447 1.724a1 1 0 0 1 .553.894V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-7.382a1 1 0 0 1 .553-.894L6 10" /><path
+                                    d="M18 5v17" /><path
+                                    d="m4 6 7.106-3.553a2 2 0 0 1 1.788 0L20 6" /><path
+                                    d="M6 5v17" /><circle cx="12" cy="9"
+                                    r="2" /></svg>
+
+                              </div>
+                              <p
+                                class="badge text-success border border-success">2021
+                                - Present</p>
+                              <h4 class="text-start text-dark fs-6">Tecnológico
+                                de Costa Rica</h4>
+                              <h5
+                                class="text-start text-secondary fs-7">Bachelor's
+                                Degree in Computer Engineering</h5>
+
+                            </div>
+
+                            <!-- Education -->
+                            <div class="col-xl-6 ">
+                              <div class="d-flex align-items-center mb-2 gap-2">
+                                <h3
+                                  class="text-start fw-bold text-dark fs-5 m-0">Technical
+                                  Skills</h3>
+
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                  width="32" height="32" viewBox="0 0 24 24"
+                                  fill="none" stroke="#4e54c8" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"
+                                  class="lucide lucide-terminal"><polyline
+                                    points="4 17 10 11 4 5" /><line x1="12"
+                                    x2="20" y1="19" y2="19" /></svg>
+
+                              </div>
+
+                              <div
+                                class="row justify-content-between align-items-center">
+
+                                <div class="col-4">
+                                  <ul
+                                    class="text-start text-secondary list-unstyled fs-7">
+                                    <li>Python</li>
+                                    <li>JavaScript</li>
+                                    <li>Bash</li>
+                                    <li>C/C++</li>
+                                  </ul>
+                                </div>
+
+                                <div class="col-4">
+                                  <ul
+                                    class="text-start text-secondary list-unstyled fs-7">
+                                    <li>Docker</li>
+                                    <li>Kubernetes</li>
+                                    <li>Linux</li>
+                                    <li>Git</li>
+                                  </ul>
+                                </div>
+
+                                <div class="col-4">
+                                  <ul
+                                    class="text-start text-secondary list-unstyled fs-7">
+                                    <li>PostgreSQL</li>
+                                    <li>MySQL</li>
+                                    <li>Firebase</li>
+                                    <li>MongoDB</li>
+                                  </ul>
+                                </div>
+
+                              </div>
+
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <div class="col-12 py-4 border-bottom border-secondary">
+                          <div class="container-fluid row">
+
+                            <!-- Experience -->
+                            <div class="col-xl-12 ">
+
+                              <div class="d-flex align-items-center mb-2 gap-2">
+                                <h3
+                                  class="text-start fw-bold text-dark fs-5 m-0">Experience</h3>
+
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                  width="32" height="32" viewBox="0 0 24 24"
+                                  fill="none" stroke="#4e54c8" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"
+                                  class="lucide lucide-briefcase-business"><path
+                                    d="M12 12h.01" /><path
+                                    d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" /><path
+                                    d="M22 13a18.15 18.15 0 0 1-20 0" /><rect
+                                    width="20" height="14" x="2" y="6"
+                                    rx="2" /></svg>
+
+                              </div>
+                              <p
+                                class="badge text-success border border-success">January
+                                2024 - Present</p>
+                              <h4
+                                class="text-start text-dark fs-6 fw-bold">Class
+                                Assistant</h4>
+                              <h5
+                                class="text-start text-secondary fs-7">Tecnológico
+                                de Costa Rica</h5>
+
+                              <ul class="text-start text-dark fs-7">
+                                <li>Created a Linux-based console tool to
+                                  automate assignment reviews and project
+                                  management for TEC student groups using
+                                  SSH.</li>
+                                <li>Planning of academic activities with
+                                  professor and monitoring of the course
+                                  program.</li>
+                                <li>Review of short tests, answering questions,
+                                  resolving conflicts and escalating them
+                                  according to
+                                  previously established parameters.</li>
+                              </ul>
+
+                              <p
+                                class="badge text-success border border-success mt-3">February
+                                2024 - Present</p>
+
+                              <h4
+                                class="text-start text-dark fs-6 fw-bold">Sports
+                                Facility Management System
+                              </h4>
+                              <h5
+                                class="text-start text-secondary fs-7">Tecnológico
+                                de Costa Rica Sports Department</h5>
+
+                              <ul class="text-start text-dark fs-7">
+                                <li>Designed and implemented a system to manage
+                                  loan requests for sports facilities,
+                                  streamlining administrative processes.</li>
+                                <li>Developed features to track requests,
+                                  schedule facility usage, and ensure efficient
+                                  communication with users.</li>
+                                <li>Collaborated with stakeholders to gather
+                                  requirements and deliver a solution aligned
+                                  with institutional needs.</li>
+                              </ul>
+
+                            </div>
+
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <!-- Start projects -->
+                    <div
+                      class="container-fluid row align-items-center justify-content-center cv-section d-none m-0 p-0">
+                      <div class="col-12 m-0 p-0">
+                        <h2 id="projects"
+                          class="text-start text-dark fs-3 mt-3">Projects</h2>
+
+                        <div class="col-12 py-4 border-bottom border-secondary">
+
+                          <div class="container-fluid row m-0 p-0">
+                            <div
+                              class="col-12 d-flex flex-column justify-content-between align-items-center">
+                              <a href="https://truck-web-mu.vercel.app/"
+                                target="_blank"
+                                class="text-dark text-start fs-4 container-fluid pointer">Landing
+                                Page Example <svg
+                                  xmlns="http://www.w3.org/2000/svg" width="28"
+                                  height="28" viewBox="0 0 24 24" fill="none"
+                                  stroke="#4e54c8" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"
+                                  class="lucide lucide-link"><path
+                                    d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /><path
+                                    d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /></svg></a>
+
+                              <iframe class="container m-0"
+                                src="https://truck-web-mu.vercel.app/"
+                                title="Landing Page Example" class="img-fluid"
+                                width="1000" height="400"></iframe>
+
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="col-12 py-4 border-bottom border-secondary">
+
+                          <div class="container-fluid row m-0 p-0">
+                            <div
+                              class="col-12 d-flex flex-column justify-content-between align-items-center">
+                              <a
+                                href="https://github.com/joctan-tec/sistema_distribuido?tab=readme-ov-file#sistema-distribuido"
+                                target="_blank"
+                                class="text-dark text-start fs-4 container-fluid pointer ">Distributed
+                                System Simulation <svg
+                                  xmlns="http://www.w3.org/2000/svg" width="28"
+                                  height="28" viewBox="0 0 24 24" fill="none"
+                                  stroke="#4e54c8" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"
+                                  class="lucide lucide-link"><path
+                                    d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /><path
+                                    d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /></svg></a>
+
+                            </div>
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <!-- Start Hobbies -->
+                    <div
+                      class="container-fluid row align-items-center justify-content-center cv-section m-0 p-0 d-none">
+                      <div class="col-12 m-0 p-0">
+                        <h2 id="hobbies"
+                          class="text-start text-dark fs-3 mt-3">Hobbies</h2>
+
+                        <div class="col-12 py-4 border-bottom border-secondary">
+
+                          <!-- ALbum -->
+
+                          <div class="album py-5 ">
+                            <div class="container">
+
+                              <div
+                                class="row row-cols-1 row-cols-sm-1 row-cols-md-2 g-3">
+                                <div class="col">
+
+                                  <div class="card bg-light cool-shadow">
+                                    
+                                    <img src="images/colibri.jpg" alt="A picture of hummingbird flying" class="card-picture">
+
+                                    <div class="card-body">
+                                      <p class="card-text text-dark">Capturing the beauty of wildlife through my lens is one of my greatest passions. I enjoy exploring nature to document unique moments and showcase the wonders of the natural world.</p>
+                                      <div
+                                        class="d-flex justify-content-between align-items-center">
+                                        
+                                          <button type="button"
+                                            class="btn btn-sm btn-outline-secondary">Visit my Instagram</button>
+                                          
+                                        
+                                        
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="col">
+
+                                  <div class="card bg-light cool-shadow">
+                                    
+                                    <img src="images/landscape.jpg" alt="A picture of hummingbird flying" class="card-picture">
+
+                                    <div class="card-body">
+                                      <p class="card-text text-dark">I find inspiration in capturing breathtaking landscapes and the beauty of nature. Through my photography, I aim to preserve the serenity and majesty of each scene, sharing unique perspectives with others.</p>
+                                      <div
+                                        class="d-flex justify-content-between align-items-center">
+                                        
+                                          <button type="button"
+                                            class="btn btn-sm btn-outline-secondary">Visit my Instagram</button>
+                                          
+                                        
+                                        
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="col">
+
+                                  <div class="card bg-light cool-shadow">
+                                    
+                                    <img src="images/undraw_basketball_40ga.svg" alt="A picture of hummingbird flying" class="card-picture">
+
+                                    <div class="card-body">
+                                      <p class="card-text text-dark">I enjoy trying different sports like basketball, football, volleyball, and ping-pong. Exploring new activities keeps me active and constantly learning.</p>
+                                      <div
+                                        class="d-flex justify-content-between align-items-center">
+                                        
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+
+                                <div class="col">
+
+                                  <div class="card bg-light cool-shadow">
+                                    
+                                    <img src="images/truck.jpg" alt="A picture of hummingbird flying" class="card-picture">
+
+                                    <div class="card-body">
+                                      <p class="card-text text-dark">I love playing video games, especially when it’s with friends. My favorite genre is truck simulation games—they combine relaxation and immersion, making them truly special to me.</p>
+                                      <div
+                                        class="d-flex justify-content-between align-items-center">
+                                          
+                                        
+                                        
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                
+                                
+                                
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- End Album -->
+                        </div>
+
+
+                          <!-- Start Contact -->
+  <div class="container-fluid row align-items-center justify-content-center cv-section d-none">
+    <div class="col-12">
+      <h2 id="contact" class="text-start text-dark fs-3 mt-3">Contact Me</h2>
+    </div>
+
+    <div class="col-12 py-4 border-bottom border-secondary">
+      <div class="container-fluid row">
+        <!-- Contact Message -->
+        <div class="col-xl-12">
+          <p class="text-start text-dark fs-6">
+            I’d love to hear from you! Whether you have a question, an exciting project idea, or just want to connect and share thoughts, don’t hesitate to get in touch. Collaboration and meaningful conversations are always welcome. Let’s explore how we can create something amazing together—reach out, and let’s start a conversation!
+          </p>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="col-xl-12 d-flex flex-column justify-content-center align-items-center">
+          <div class="container-fluid border-bottom border-secondary d-flex justify-content-between align-items-center">
+            <h3 class="badge text-bg-success text-start fs-6">
+              Email . . . . .
+            </h3>
+            <h3 class="text-end text-dark fs-6">
+              <a href="mailto:youremail@example.com" class="text-decoration-none text-dark">jocpoesquivel@gmail.com</a>
+            </h3>
+          </div>
+
+          <div class="container-fluid border-bottom border-secondary d-flex justify-content-between align-items-center mt-2">
+            <h3 class="badge text-bg-success text-start fs-6">
+              Phone . . . . .
+            </h3>
+            <h3 class="text-end text-dark fs-6">
+              <a href="tel:+50686361447" class="text-decoration-none text-dark">+506 8636 1447</a>
+            </h3>
+          </div>
+
+          <div class="container-fluid border-bottom border-secondary d-flex justify-content-between  align-items-center mt-2">
+            <h3 class="badge text-bg-success text-start fs-6">
+              LinkedIn . . . . .
+            </h3>
+            <h3 class="text-end text-dark fs-6">
+              <a href="https://www.linkedin.com/in/joctan-esquivel-86b473254/" target="_blank" class="text-decoration-none text-dark">Joctan Esquivel</a>
+            </h3>
+          </div>
+
+          <div class="container-fluid d-flex justify-content-between align-items-center mt-2">
+            <h3 class="badge text-bg-success text-start fs-6">
+              Instagram . . . . .
+            </h3>
+            <h3 class="text-end text-dark fs-6">
+              <a href="https://www.instagram.com/joc.esquivel" target="_blank" class="text-decoration-none text-dark">@joc.esquivel</a>
+            </h3>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 py-4">
+      <h3 class="text-start text-dark fs-3">Let’s Connect</h3>
+      <p class="text-start text-dark fs-6">
+        Feel free to reach out via email, phone, or LinkedIn. I look forward to collaborating with you and discussing exciting opportunities!
+      </p>
+    </div>
+  </div>
+  <!-- End Contact -->
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </body>
+      </html>
