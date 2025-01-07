@@ -290,7 +290,7 @@ document.getElementById("nav-contact-buttom").addEventListener("click", () => {
 });
 
 // function([string1, string2],target id,[color1,color2])
-consoleText(["Software Engineer", "Hello World!", "Contact with me!"], "text", [
+consoleText(["Computer Engineer", "Hello World!", "Contact with me!"], "text", [
     "#000957",
     "#7E5CAD",
     "#78B3CE",
